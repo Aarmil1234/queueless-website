@@ -221,7 +221,7 @@
                     <span>Free Consultation</span>
                 </div>
             </div>
-            <a href="#contact" class="btn btn-primary">Schedule Free Demo</a>
+            <a href="https://wa.me/917698000747?text=Hi, I'm interested in scheduling a free demo" class="btn btn-primary" target="_blank">Schedule Free Demo</a>
         </div>
     </section>
 
@@ -247,7 +247,7 @@
                                 info@queueless.com
                             </div>
                         </div> -->
-                        <div class="contact-item" style="border: 1px solid #eee;">
+                        <a class="contact-item" style="border: 1px solid #eee; cursor: pointer; text-decoration: none; color: #000;" href="tel:+917698000747">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -255,7 +255,7 @@
                                 <strong>Phone</strong><br>
                                 +91 7698000747
                             </div>
-                        </div>
+                        </a>
                         <div class="contact-item" style="border: 1px solid #eee;">
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
@@ -432,16 +432,29 @@ Junagadh - 362001
             });
         });
 
-        // Form submission
-        function handleSubmit(event) {
-            event.preventDefault();
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData);
-            
-            // Simulate form submission
-            alert(`Thank you for your message, ${data.name}! We'll get back to you soon.`);
-            event.target.reset();
-        }
+   
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    const templateParams = {
+      from_name: form.name.value,
+      from_email: form.email.value,
+      from_phone: form.phone.value || "Not provided",
+      message: form.message.value
+    };
+
+    emailjs.send("service_qgaeugb", "template_ayjq84s", templateParams)
+      .then(() => {
+        alert("✅ Thank you! Your message has been sent successfully.");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert("❌ Sorry, something went wrong. Please try again later.");
+      });
+  }
+
 
         // Intersection Observer for animations
         const observerOptions = {
@@ -466,5 +479,13 @@ Junagadh - 362001
             observer.observe(card);
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("GK8cgSXIptCdHRQUF"); // Replace with your Public Key
+  })();
+</script>
+
 </body>
 </html>
