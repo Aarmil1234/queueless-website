@@ -445,15 +445,21 @@ Junagadh - 362001
     };
 
     emailjs.send("service_qgaeugb", "template_ayjq84s", templateParams)
-      .then(() => {
-        alert("✅ Thank you! Your message has been sent successfully.");
-        form.reset();
-      })
-      .catch((error) => {
-        console.error("EmailJS Error:", error);
-        alert("❌ Sorry, something went wrong. Please try again later.");
-      });
-  }
+  .then(() => {
+    // Professional success message
+    alert(
+      "Thank you for reaching out to Queueless. Your message has been successfully sent. Our team will review your request and get back to you shortly."
+    );
+    form.reset();
+  })
+  .catch((error) => {
+    // Professional error message
+    console.error("EmailJS Error:", error);
+    alert(
+      "We apologize, but there was an issue submitting your message. Please try again later or contact us directly at +91 7698000747."
+    );
+  });
+
 
 
         // Intersection Observer for animations
