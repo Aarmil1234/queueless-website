@@ -119,7 +119,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(79, 70, 229, 0.85), rgba(6, 182, 212, 0.75));
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.88), rgba(6, 182, 212, 0.82));
             z-index: 1;
         }
 
@@ -127,6 +127,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
         }
 
         .carousel-content {
@@ -139,6 +140,7 @@
             z-index: 2;
             max-width: 900px;
             padding: 0 2rem;
+            width: 100%;
         }
 
         .carousel-content h1 {
@@ -154,6 +156,7 @@
             margin-bottom: 2.5rem;
             opacity: 0.95;
             font-weight: 300;
+            line-height: 1.5;
         }
 
         .hero-buttons {
@@ -712,50 +715,444 @@
             color: #94A3B8;
         }
 
-        /* Responsive */
-        @media (max-width: 968px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .carousel-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .section-title {
-                font-size: 2.2rem;
-            }
-
-            .about-content,
-            .contact-container,
-            .compare-container {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark);
+            cursor: pointer;
         }
 
-        @media (max-width: 640px) {
+        .nav-menu.mobile-active {
+            display: flex;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-container {
+                padding: 0 1.5rem;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 3rem 0;
+                gap: 2rem;
+                transition: left 0.3s ease;
+                box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+
+            .nav-menu.mobile-active {
+                left: 0;
+            }
+
+            .nav-menu a {
+                font-size: 1.2rem;
+            }
+
+            .hero-section {
+                height: 500px;
+                margin-top: 70px;
+            }
+
+            .carousel-content {
+                padding: 0 1.5rem;
+                max-width: 100%;
+            }
+
             .carousel-content h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+                margin-bottom: 1rem;
+                line-height: 1.3;
             }
 
             .carousel-content p {
                 font-size: 1.1rem;
+                margin-bottom: 1.8rem;
+                line-height: 1.5;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .btn {
+                padding: 14px 30px;
+                font-size: 1rem;
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-description {
+                font-size: 1.05rem;
+            }
+
+            .about-section,
+            .solutions-section,
+            .why-choose-section,
+            .demo-section,
+            .contact-section {
+                padding: 60px 1.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .about-text h3 {
+                font-size: 1.6rem;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+            }
+
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .solutions-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .solution-card {
+                padding: 2rem;
+            }
+
+            .solution-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+            }
+
+            .solution-card h3 {
+                font-size: 1.4rem;
+            }
+
+            .compare-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .compare-card {
+                padding: 2rem;
+            }
+
+            .compare-card h3 {
+                font-size: 1.6rem;
+            }
+
+            .demo-content h2 {
+                font-size: 2rem;
+            }
+
+            .demo-content p {
+                font-size: 1.1rem;
+            }
+
+            .demo-features {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: flex-start;
+                margin-bottom: 2rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .contact-info h3 {
+                font-size: 1.6rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+
+            .footer {
+                padding: 3rem 1.5rem 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .logo {
+                font-size: 1.6rem;
+            }
+
+            .hero-section {
+                height: 500px;
+            }
+
+            .carousel-content h1 {
+                font-size: 1.75rem;
+                margin-bottom: 0.8rem;
+                line-height: 1.3;
+            }
+
+            .carousel-content p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.5;
+            }
+
+            .btn {
+                padding: 12px 28px;
+                font-size: 0.95rem;
+                max-width: 100%;
+            }
+
+            .section-header {
+                margin-bottom: 2.5rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.85rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            .section-description {
+                font-size: 1rem;
             }
 
             .about-stats {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .stat-card {
+                padding: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2.2rem;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+            }
+
+            .solution-card {
+                padding: 1.5rem;
+            }
+
+            .solution-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .solution-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .solution-card p {
+                font-size: 0.95rem;
+            }
+
+            .compare-card {
+                padding: 1.5rem;
+            }
+
+            .compare-card h3 {
+                font-size: 1.4rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .compare-list li {
+                font-size: 0.95rem;
+                padding: 0.8rem 0;
+            }
+
+            .demo-content h2 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            .demo-content p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .demo-features {
+                gap: 1rem;
+            }
+
+            .demo-feature {
+                font-size: 0.95rem;
+            }
+
+            .demo-feature i {
+                font-size: 1.2rem;
+            }
+
+            .contact-info h3 {
+                font-size: 1.5rem;
+            }
+
+            .contact-info p {
+                font-size: 1rem;
+            }
+
+            .contact-details {
+                gap: 1rem;
+            }
+
+            .contact-item {
+                padding: 1rem;
+                flex-direction: row;
+            }
+
+            .contact-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            .form-group {
+                margin-bottom: 1rem;
+            }
+
+            .form-group label {
+                font-size: 0.9rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                padding: 0.8rem;
+                font-size: 0.95rem;
+            }
+
+            .form-group textarea {
+                min-height: 120px;
+            }
+
+            .submit-btn {
+                padding: 0.9rem;
+                font-size: 1rem;
             }
 
             .footer-content {
                 grid-template-columns: 1fr;
+                gap: 2.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .footer-brand {
+                max-width: 100%;
+            }
+
+            .footer-logo {
+                font-size: 1.8rem;
+            }
+
+            .footer-brand p {
+                font-size: 0.95rem;
+            }
+
+            .social-links {
+                justify-content: flex-start;
+            }
+
+            .social-link {
+                width: 38px;
+                height: 38px;
+            }
+
+            .footer-column h4 {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            .footer-links li {
+                margin-bottom: 0.6rem;
+            }
+
+            .footer-links a {
+                font-size: 0.9rem;
+            }
+
+            .footer-bottom {
+                padding-top: 1.5rem;
+                font-size: 0.85rem;
+            }
+
+            .carousel-indicators {
+                bottom: 20px;
+            }
+
+            .indicator {
+                width: 10px;
+                height: 10px;
+            }
+
+            .indicator.active {
+                width: 30px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .carousel-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .hero-section {
+                height: 400px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -765,12 +1162,15 @@
     <header class="header" id="header">
         <nav class="nav-container">
             <div class="logo">Queueless</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#why-choose">Why Choose Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="#solutions" onclick="closeMobileMenu()">Solutions</a></li>
+                <li><a href="#why-choose" onclick="closeMobileMenu()">Why Choose Us</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -1089,11 +1489,38 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Queueless. All rights reserved. </p>
+            <p>&copy; 2025 Queueless. All rights reserved. | Designed with ❤️ for better healthcare</p>
         </div>
     </footer>
 
     <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('mobile-active');
+            
+            // Change icon
+            const icon = menuToggle.querySelector('i');
+            if (navMenu.classList.contains('mobile-active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.remove('mobile-active');
+            
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+
         // Carousel functionality
         let currentSlideIndex = 0;
         const slides = document.querySelectorAll('.carousel-slide');
