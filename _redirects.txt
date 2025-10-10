@@ -1,0 +1,1 @@
+/admin/*  https://queueless-admin.netlify.app/:splat  200
