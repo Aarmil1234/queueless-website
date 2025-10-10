@@ -1,2 +1,2 @@
-/admin  https://queueless-admin.netlify.app/login  200
-/admin/*  https://queueless-admin.netlify.app/:splat  200
+/admin  https://queueless-admin.netlify.app/login  301
+/admin/*  https://queueless-admin.netlify.app/:splat  301
