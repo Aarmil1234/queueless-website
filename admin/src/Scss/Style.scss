@@ -313,6 +313,7 @@ body {
   animation: fadeInDown 0.8s ease;
 }
 
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -631,6 +632,12 @@ select.form-control {
   box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
 }
 
+
+.login-wrapper{
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  min-height:100vh;
+}
+
 // ==========================================
 // RESPONSIVE STYLES
 // ==========================================
@@ -734,5 +741,43 @@ select.form-control {
 
   .user-info {
     padding: 8px;
+  }
+}
+
+/* ===================== PRINT STYLES ===================== */
+@media print {
+  /* Hide everything by default */
+  body * {
+    visibility: hidden !important;
+  }
+
+  /* Show only the report preview content */
+  #report-preview,
+  #report-preview * {
+    visibility: visible !important;
+  }
+
+  /* Force layout for printing */
+  #report-preview {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 30px !important;
+    box-shadow: none !important;
+    background: white !important;
+  }
+
+  /* Hide buttons / navbar / sidebar during print */
+  .no-print,
+  .navbar,
+  .sidebar {
+    display: none !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 20mm;
   }
 }
