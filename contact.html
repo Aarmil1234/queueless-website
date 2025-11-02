@@ -1,0 +1,179 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+        <title>Contact Queueless - Get In Touch for Healthcare Solutions</title>
+        <meta name="description" content="Contact Queueless for hospital management solutions. Reach us via phone, email, or visit our office in Junagadh. Free consultation available.">
+        <meta name="keywords" content="contact queueless, hospital management contact, healthcare software support, queueless junagadh">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav-container">
+                <div class="logo">Queueless</div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+                    <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+                    <li><a href="solutions.html" onclick="closeMobileMenu()">Solutions</a></li>
+                    <li><a href="blog.html" onclick="closeMobileMenu()">Blogs</a></li>
+                    <li><a href="why-choose.html" onclick="closeMobileMenu()">Why Choose Us</a></li>
+                    <li><a href="contact.html" class="active" onclick="closeMobileMenu()">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get In Touch - We're Here to Help</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Get In Touch</div>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-description">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Let's Talk About Your Healthcare Needs</h3>
+                        <p>Whether you're a small clinic or a large hospital, we're here to help you transform your healthcare delivery. Reach out to us for a free consultation and demo.</p>
+                        <div class="contact-details">
+                            <a class="contact-item" style="border: 1px solid #eee; cursor: pointer; text-decoration: none; color: #000;" href="tel:+917698000747">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <strong>Phone</strong><br>
+                                    +91 7698000747
+                                </div>
+                            </a>
+                            <div class="contact-item" style="border: 1px solid #eee;">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <strong>Address</strong><br>
+                                    Logiciel Ganymede <br>
+                                    Below Krishna Palace,<br>
+                                    Saibaba society, <br>
+                                    Near S.T. Stand, <br>
+                                    Junagadh - 362001
+                                </div>
+                            </div>
+                            <div class="contact-item" style="border: 1px solid #eee;">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <strong>Business Hours</strong><br>
+                                    Monday - Saturday: 9:00 AM - 6:00 PM<br>
+                                    Sunday: Closed
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section (Optional) -->
+        <section class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Our Location</div>
+                    <h2 class="section-title">Find Us Here</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.5126815803324!2d70.4534503!3d21.5267998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39580120f2fc5b61%3A0xc9d25888adf51844!2sQueueless!5e0!3m2!1sen!2sin!4v1762003949419!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+         <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">Queueless</div>
+                <p>Transforming healthcare management with innovative digital solutions. Making quality healthcare accessible and convenient for everyone.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Queueless-Hospital-Management-Software/61581918880900/?rdid=nvdj9IBJDo0Z2cqL&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ACS7VeaCa%2F" target="_blank" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/queu_eless/?igsh=eTJ1eTRhZnJkcTNo#" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="why-choose.html">Why Choose US</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="solutions.html#appointments">Online Appointments</a></li>
+                    <li><a href="solutions.html#opd">OPD Management</a></li>
+                    <li><a href="solutions.html#ipd">IPD Management</a></li>
+                    <li><a href="solutions.html#reports">Reports & Analytics</a></li>
+                    <li><a href="solutions.html#whatsapp">WhatsApp Reminders</a></li>
+                    <li><a href="solutions.html#security">Secure & Compliant</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="demo.html">Free Demo</a></li>
+                     <li><a href="contact.html#contact">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Logiciel Ganymede. All rights reserved.</p>
+        </div>
+    </footer>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+        (function(){
+            emailjs.init("GK8cgSXIptCdHRQUF");
+        })();
+        </script>
+    </body>
+    </html>

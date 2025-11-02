@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <title>Queueless - Smart Hospital Management System | Online Appointments & Patient Care</title>
+    <meta name="description" content="Transform your healthcare facility with Queueless - Complete hospital management system with online appointments, OPD/IPD management, real-time reports, and WhatsApp reminders.">
+    <meta name="keywords" content="hospital management system, online appointments, OPD management, IPD management, healthcare software, patient management, queue-less hospital">
+    <meta name="author" content="Queueless">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">Queueless</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="solutions.html" onclick="closeMobileMenu()">Solutions</a></li>
+                <li><a href="blog.html" onclick="closeMobileMenu()">Blogs</a></li>
+                <li><a href="why-choose.html" onclick="closeMobileMenu()">Why Choose Us</a></li>
+                <li><a href="contact.html" onclick="closeMobileMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Carousel -->
+    <section class="hero-section" id="home">
+        <div class="carousel">
+            <div class="carousel-slide active">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&q=80" alt="Modern Hospital Reception" class="carousel-image">
+                <div class="carousel-content">
+                    <h1>Welcome to the Future of Healthcare</h1>
+                    <p>Experience seamless hospital management with zero queues and complete digital convenience</p>
+                    <div class="hero-buttons">
+                        <a href="demo.html" class="btn btn-primary">Get Free Demo</a>
+                        <a href="about.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1920&q=80" alt="Doctor with Patient" class="carousel-image">
+                <div class="carousel-content">
+                    <h1>Smart Appointment Management</h1>
+                    <p>Book appointments online, anytime, anywhere. Say goodbye to long waiting queues forever</p>
+                    <div class="hero-buttons">
+                        <a href="demo.html" class="btn btn-primary">Get Free Demo</a>
+                        <a href="solutions.html" class="btn btn-secondary">Our Solutions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&q=80" alt="Medical Technology" class="carousel-image">
+                <div class="carousel-content">
+                    <h1>Complete Patient Care Solution</h1>
+                    <p>From OPD to IPD, track every aspect of patient care with real-time reports and updates</p>
+                    <div class="hero-buttons">
+                        <a href="demo.html" class="btn btn-primary">Get Free Demo</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+      <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">About Queueless</div>
+                <h2 class="section-title">Revolutionizing Healthcare Management</h2>
+                <p class="section-description">We are on a mission to transform healthcare delivery by eliminating queues and bringing world-class digital solutions to hospitals and patients</p>
+            </div>
+            </div>
+            </section>
+    
+
+    <!-- Quick Features Section -->
+    <section class="solutions-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Our Solutions</div>
+                <h2 class="section-title">Comprehensive Healthcare Solutions</h2>
+                <p class="section-description">Everything you need to run a modern, efficient healthcare facility</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                    <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Online Appointments</h3>
+                    <p>Book appointments 24/7</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                    <i class="fas fa-hospital-user"></i>
+                    </div>
+                    <h3>OPD Management</h3>
+                    <p>Complete outpatient care</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                    <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>IPD Management</h3>
+                    <p>Streamlined inpatient care</p>
+                </div>
+                
+                <div class="solution-card" id="reports">
+                    <div class="solution-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Real-Time Reports</h3>
+                    <p>Access diagnosis reports</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">
+                    <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp Reminders</h3>
+                    <p>Automated notifications</p>
+                </div>
+                
+                <div class="solution-card" id="security">
+                    <div class="solution-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Compliant</h3>
+                    <p>Enterprise-grade security</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="demo-section">
+        <div class="demo-content">
+            <h2>Ready to Transform Your Healthcare Facility?</h2>
+            <p>Join leading hospitals in providing exceptional patient care with zero queues</p>
+            <div class="cta-buttons">
+                <a href="demo.html" class="btn btn-primary">Get Free Demo</a>
+                <a href="solutions.html" class="btn btn-secondary">Explore Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">Queueless</div>
+                <p>Transforming healthcare management with innovative digital solutions. Making quality healthcare accessible and convenient for everyone.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Queueless-Hospital-Management-Software/61581918880900/?rdid=nvdj9IBJDo0Z2cqL&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ACS7VeaCa%2F" target="_blank" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/queu_eless/?igsh=eTJ1eTRhZnJkcTNo#" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="why-choose.html">Why Choose US</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="solutions.html#appointments">Online Appointments</a></li>
+                    <li><a href="solutions.html#opd">OPD Management</a></li>
+                    <li><a href="solutions.html#ipd">IPD Management</a></li>
+                    <li><a href="solutions.html#reports">Reports & Analytics</a></li>
+                    <li><a href="solutions.html#whatsapp">WhatsApp Reminders</a></li>
+                    <li><a href="solutions.html#security">Secure & Compliant</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="demo.html">Free Demo</a></li>
+                     <li><a href="contact.html#contact">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Logiciel Ganymede. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
