@@ -4,91 +4,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <title>Blog - Queueless Healthcare Insights</title>
-    <meta name="description" content="Stay updated with the latest healthcare management insights, tips, and industry trends from Queueless.">
-    <meta name="keywords" content="healthcare blog, hospital management tips, digital healthcare, patient care">
+    <title>Blogs - Queueless | Healthcare Insights & Industry Trends</title>
+    <meta name="description" content="Expert tips, industry trends, and success stories on digital healthcare transformation, hospital management, and patient care from Queueless.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Queueless Blog - Expert tips, industry trends, and success stories",
-    "url": "https://queueless.co.in/blog",
-    "description": "Expert tips, industry trends, and success stories on digital healthcare transformation, hospital management, and patient care.",
-    "about": {
-        "@type": "Organization",
-        "name": "Queueless"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://queueless.co.in/blog/search?q={search_term_string}", 
-      "query-input": "required name=search_term_string"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    <link rel="stylesheet" href="blog.css">
+    
+    <script type="application/ld+json">
+    [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://queueless.co.in/"
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Queueless Blog - Expert tips, industry trends, and success stories",
+        "url": "https://queueless.co.in/blogs.html",
+        "description": "Expert tips, industry trends, and success stories on digital healthcare transformation, hospital management, and patient care.",
+        "about": {
+            "@type": "Organization",
+            "name": "Queueless"
+        }
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://queueless.co.in/blog"
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://queueless.co.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://queueless.co.in/blogs.html"
+          }
+        ]
       }
     ]
-  }
-]
-</script>
-
-
+    </script>
 </head>
+
 <body>
-    
-        <header class="header" id="header">
-            <nav class="nav-container">
-                <div class="logo">Queueless</div>
-                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
-                    <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
-                    <li><a href="solutions.html" onclick="closeMobileMenu()">Solutions</a></li>
-                    <li><a href="blog.html" onclick="closeMobileMenu()">Blogs</a></li>
-                    <li><a href="why-choose.html" onclick="closeMobileMenu()">Why Choose Us</a></li>
-                    <li><a href="contact.html" class="active" onclick="closeMobileMenu()">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">Queueless</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="solutions.html" onclick="closeMobileMenu()">Solutions</a></li>
+                <li><a href="why-choose.html" onclick="closeMobileMenu()">Why Choose Us</a></li>
+                <li><a href="blogs.html" class="active" onclick="closeMobileMenu()">Blogs</a></li>
+                <li><a href="contact.html" onclick="closeMobileMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        
-        <section class="page-header">
-            <div class="container">
-                <h1>Blog</h1>
-                <p>Expert tips, industry trends, and success stories</p>
+    <!-- Blog Hero Section -->
+    <section class="blogs-hero">
+        <div class="container">
+            <div class="blogs-hero-content">
+                <h1>Healthcare Insights & Industry Trends</h1>
+                <p>Expert tips, success stories, and the latest in digital healthcare transformation</p>
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Expert Insights</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Industry Trends</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Success Stories</span>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-         <footer class="footer">
+    <!-- Featured Blog Section -->
+    <section class="featured-blog">
+        <div class="container">
+            <div class="featured-badge">
+                <i class="fas fa-star"></i> Featured Article
+            </div>
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="https://varungroups.com/wp-content/uploads/2023/01/Varun-Groups-Our-Facilities-MODULAR-OT-1170x658.jpg" alt="Transforming Healthcare with Queueless">
+                </div>
+                <div class="featured-text">
+                    <span class="featured-category">
+                        <i class="fas fa-folder"></i> Healthcare Technology
+                    </span>
+                    <h2>Transforming Healthcare with Queueless</h2>
+                    <p class="featured-excerpt">Discover how Queueless, Junagadh's leading hospital management software, is revolutionizing healthcare delivery with digital solutions that streamline operations and improve patient care. Learn about the best hospital management solutions transforming healthcare facilities across Gujarat.</p>
+                    <div class="featured-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>January 15, 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                    <a href="blog-transforming-healthcare.html" class="btn btn-primary">
+                        Read Full Article <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-wrapper">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th"></i> All Posts
+                </button>
+                <button class="category-btn" data-category="healthcare-technology">
+                    <i class="fas fa-hospital"></i> Healthcare Technology
+                </button>
+                <button class="category-btn" data-category="digital-transformation">
+                    <i class="fas fa-digital-tachograph"></i> Digital Transformation
+                </button>
+                <button class="category-btn" data-category="patient-care">
+                    <i class="fas fa-user-md"></i> Patient Care
+                </button>
+                <button class="category-btn" data-category="analytics">
+                    <i class="fas fa-chart-bar"></i> Analytics
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Listing Section -->
+    <section class="blog-listing">
+        <div class="container">
+            <div class="blogs-grid">
+                
+                <!-- Blog Card 1 -->
+                <article class="blog-card" data-category="healthcare-technology">
+                    <div class="blog-card-image">
+                        <img src="https://varungroups.com/wp-content/uploads/2023/01/Varun-Groups-Our-Facilities-MODULAR-OT-1170x658.jpg" alt="Hospital Management">
+                        <div class="blog-overlay">
+                            <a href="blog-transforming-healthcare.html" class="overlay-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <span class="blog-category healthcare-tech">
+                                <i class="fas fa-hospital"></i> Healthcare Technology
+                            </span>
+                        </div>
+                        <h3><a href="blog-transforming-healthcare.html">Transforming Healthcare with Queueless</a></h3>
+                        <p>Discover how Queueless is revolutionizing hospital management in Junagadh with cutting-edge digital solutions...</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats">
+                            <a href="blog-transforming-healthcare.html" class="read-more-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 - Coming Soon -->
+                <article class="blog-card coming-soon" data-category="digital-transformation">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=400&q=80" alt="Patient Care">
+                        <div class="coming-soon-badge">
+                            <i class="fas fa-hourglass-half"></i> Coming Soon
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <span class="blog-category digital">
+                                <i class="fas fa-digital-tachograph"></i> Digital Healthcare
+                            </span>
+                        </div>
+                        <h3>5 Ways Digital Solutions Improve Patient Care</h3>
+                        <p>How technology enhances efficiency and patient satisfaction in modern healthcare facilities...</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats">
+                                <span><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 - Coming Soon -->
+                <article class="blog-card coming-soon" data-category="analytics">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&q=80" alt="Healthcare Analytics">
+                        <div class="coming-soon-badge">
+                            <i class="fas fa-hourglass-half"></i> Coming Soon
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <span class="blog-category analytics">
+                                <i class="fas fa-chart-bar"></i> Analytics
+                            </span>
+                        </div>
+                        <h3>Data-Driven Healthcare: The Future is Now</h3>
+                        <p>Explore how hospital analytics and reporting drive smarter decisions and better outcomes...</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats">
+                                <span><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 4 - Coming Soon -->
+                <article class="blog-card coming-soon" data-category="patient-care">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80" alt="Patient Experience">
+                        <div class="coming-soon-badge">
+                            <i class="fas fa-hourglass-half"></i> Coming Soon
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <span class="blog-category patient">
+                                <i class="fas fa-user-md"></i> Patient Care
+                            </span>
+                        </div>
+                        <h3>Enhancing Patient Experience Through Technology</h3>
+                        <p>Best practices for improving patient satisfaction and engagement in modern hospitals...</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats">
+                                <span><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 5 - Coming Soon -->
+                <article class="blog-card coming-soon" data-category="healthcare-technology">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400&q=80" alt="Hospital Operations">
+                        <div class="coming-soon-badge">
+                            <i class="fas fa-hourglass-half"></i> Coming Soon
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <span class="blog-category healthcare-tech">
+                                <i class="fas fa-hospital"></i> Healthcare Technology
+                            </span>
+                        </div>
+                        <h3>Streamlining Hospital Operations with HMS</h3>
+                        <p>How hospital management systems reduce costs and improve operational efficiency...</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats">
+                                <span><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 6 - Coming Soon -->
+                <article class="blog-card coming-soon" data-category="digital-transformation">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=400&q=80" alt="Digital Health">
+                        <div class="coming-soon-badge">
+                            <i class="fas fa-hourglass-half"></i> Coming Soon
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <span class="blog-category digital">
+                                <i class="fas fa-digital-tachograph"></i> Digital Transformation
+                            </span>
+                        </div>
+                        <h3>The Digital Healthcare Revolution in India</h3>
+                        <p>Understanding the shift towards digital healthcare and its impact on Indian hospitals...</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats">
+                                <span><i class="fas fa-clock"></i> Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+   
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="footer-logo">Queueless</div>
                 <p>Transforming healthcare management with innovative digital solutions. Making quality healthcare accessible and convenient for everyone.</p>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/people/Queueless-Hospital-Management-Software/61581918880900/?rdid=nvdj9IBJDo0Z2cqL&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ACS7VeaCa%2F" target="_blank" class="social-link" aria-label="Facebook">
+                    <a href="https://www.facebook.com/people/Queueless-Hospital-Management-Software/61581918880900/" target="_blank" class="social-link" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/queu_eless/?igsh=eTJ1eTRhZnJkcTNo#" target="_blank" class="social-link" aria-label="Instagram">
+                    <a href="https://www.instagram.com/queu_eless/" target="_blank" class="social-link" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -99,8 +325,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="blog.html">Blogs</a></li>
-                    <li><a href="why-choose.html">Why Choose US</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="why-choose.html">Why Choose Us</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -119,7 +345,7 @@
                 <ul class="footer-links">
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="demo.html">Free Demo</a></li>
-                     <li><a href="contact.html#contact">Help Center</a></li>
+                    <li><a href="contact.html#contact">Help Center</a></li>
                 </ul>
             </div>
         </div>
@@ -129,5 +355,6 @@
     </footer>
 
     <script src="script.js"></script>
+   
 </body>
 </html>
