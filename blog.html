@@ -57,7 +57,7 @@
                 <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
                 <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
                 <li><a href="solutions.html" onclick="closeMobileMenu()">Solutions</a></li>
-                <li><a href="blogs.html" class="active" onclick="closeMobileMenu()">Blogs</a></li>
+                <li><a href="blog.html" class="active" onclick="closeMobileMenu()">Blogs</a></li>
                 <li><a href="why-choose.html" onclick="closeMobileMenu()">Why Choose Us</a></li>
                 <li><a href="contact.html" onclick="closeMobileMenu()">Contact</a></li>
             </ul>
@@ -91,10 +91,7 @@
     <!-- Featured Blog Section -->
     <section class="featured-blog">
         <div class="container">
-            <div class="featured-badge">
-                <i class="fas fa-star"></i> Featured Article
-            </div>
-            <div class="featured-content">
+            <div class="featured-content" style="margin: 15px 0;">
                 <div class="featured-image">
                     <img src="https://varungroups.com/wp-content/uploads/2023/01/Varun-Groups-Our-Facilities-MODULAR-OT-1170x658.jpg" alt="Transforming Healthcare with Queueless">
                 </div>
@@ -104,17 +101,22 @@
                     </span>
                     <h2>Transforming Healthcare with Queueless</h2>
                     <p class="featured-excerpt">Discover how Queueless, Junagadh's leading hospital management software, is revolutionizing healthcare delivery with digital solutions that streamline operations and improve patient care. Learn about the best hospital management solutions transforming healthcare facilities across Gujarat.</p>
-                    <div class="featured-meta">
-                        <div class="meta-item">
-                            <i class="fas fa-calendar"></i>
-                            <span>January 15, 2025</span>
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-clock"></i>
-                            <span>8 min read</span>
-                        </div>
-                    </div>
                     <a href="blog-transforming-healthcare.html" class="btn btn-primary">
+                        Read Full Article <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="featured-content" style="margin: 15px 0;">
+                <div class="featured-image">
+                    <img src="https://demigos.com/media/blog/upload/2020/12/04/gallery.jpg" alt="Smart hospital management system">
+                </div>
+                <div class="featured-text">
+                    <span class="featured-category">
+                        <i class="fas fa-folder"></i> Healthcare Technology
+                    </span>
+                    <h2>Smart Hospital Management System: Transforming Patient Care</h2>
+                    <p class="featured-excerpt">Discover how Smart Hospital Management Systems in 2025 are transforming patient care with AI, telemedicine, cloud security, and predictive analytics. Learn why modern hospitals must adopt these systems to stay competitive.</p>
+                    <a href="blog-shm.html" class="btn btn-primary">
                         Read Full Article <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -122,188 +124,7 @@
         </div>
     </section>
 
-    <!-- Categories Filter -->
-    <section class="blog-categories">
-        <div class="container">
-            <div class="categories-wrapper">
-                <button class="category-btn active" data-category="all">
-                    <i class="fas fa-th"></i> All Posts
-                </button>
-                <button class="category-btn" data-category="healthcare-technology">
-                    <i class="fas fa-hospital"></i> Healthcare Technology
-                </button>
-                <button class="category-btn" data-category="digital-transformation">
-                    <i class="fas fa-digital-tachograph"></i> Digital Transformation
-                </button>
-                <button class="category-btn" data-category="patient-care">
-                    <i class="fas fa-user-md"></i> Patient Care
-                </button>
-                <button class="category-btn" data-category="analytics">
-                    <i class="fas fa-chart-bar"></i> Analytics
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Listing Section -->
-    <section class="blog-listing">
-        <div class="container">
-            <div class="blogs-grid">
-                
-                <!-- Blog Card 1 -->
-                <article class="blog-card" data-category="healthcare-technology">
-                    <div class="blog-card-image">
-                        <img src="https://varungroups.com/wp-content/uploads/2023/01/Varun-Groups-Our-Facilities-MODULAR-OT-1170x658.jpg" alt="Hospital Management">
-                        <div class="blog-overlay">
-                            <a href="blog-transforming-healthcare.html" class="overlay-link">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-header">
-                            <span class="blog-category healthcare-tech">
-                                <i class="fas fa-hospital"></i> Healthcare Technology
-                            </span>
-                        </div>
-                        <h3><a href="blog-transforming-healthcare.html">Transforming Healthcare with Queueless</a></h3>
-                        <p>Discover how Queueless is revolutionizing hospital management in Junagadh with cutting-edge digital solutions...</p>
-                        <div class="blog-card-footer">
-                            <div class="blog-stats">
-                            <a href="blog-transforming-healthcare.html" class="read-more-link">
-                                Read More <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog Card 2 - Coming Soon -->
-                <article class="blog-card coming-soon" data-category="digital-transformation">
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=400&q=80" alt="Patient Care">
-                        <div class="coming-soon-badge">
-                            <i class="fas fa-hourglass-half"></i> Coming Soon
-                        </div>
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-header">
-                            <span class="blog-category digital">
-                                <i class="fas fa-digital-tachograph"></i> Digital Healthcare
-                            </span>
-                        </div>
-                        <h3>5 Ways Digital Solutions Improve Patient Care</h3>
-                        <p>How technology enhances efficiency and patient satisfaction in modern healthcare facilities...</p>
-                        <div class="blog-card-footer">
-                            <div class="blog-stats">
-                                <span><i class="fas fa-clock"></i> Coming Soon</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog Card 3 - Coming Soon -->
-                <article class="blog-card coming-soon" data-category="analytics">
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&q=80" alt="Healthcare Analytics">
-                        <div class="coming-soon-badge">
-                            <i class="fas fa-hourglass-half"></i> Coming Soon
-                        </div>
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-header">
-                            <span class="blog-category analytics">
-                                <i class="fas fa-chart-bar"></i> Analytics
-                            </span>
-                        </div>
-                        <h3>Data-Driven Healthcare: The Future is Now</h3>
-                        <p>Explore how hospital analytics and reporting drive smarter decisions and better outcomes...</p>
-                        <div class="blog-card-footer">
-                            <div class="blog-stats">
-                                <span><i class="fas fa-clock"></i> Coming Soon</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog Card 4 - Coming Soon -->
-                <article class="blog-card coming-soon" data-category="patient-care">
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80" alt="Patient Experience">
-                        <div class="coming-soon-badge">
-                            <i class="fas fa-hourglass-half"></i> Coming Soon
-                        </div>
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-header">
-                            <span class="blog-category patient">
-                                <i class="fas fa-user-md"></i> Patient Care
-                            </span>
-                        </div>
-                        <h3>Enhancing Patient Experience Through Technology</h3>
-                        <p>Best practices for improving patient satisfaction and engagement in modern hospitals...</p>
-                        <div class="blog-card-footer">
-                            <div class="blog-stats">
-                                <span><i class="fas fa-clock"></i> Coming Soon</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog Card 5 - Coming Soon -->
-                <article class="blog-card coming-soon" data-category="healthcare-technology">
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400&q=80" alt="Hospital Operations">
-                        <div class="coming-soon-badge">
-                            <i class="fas fa-hourglass-half"></i> Coming Soon
-                        </div>
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-header">
-                            <span class="blog-category healthcare-tech">
-                                <i class="fas fa-hospital"></i> Healthcare Technology
-                            </span>
-                        </div>
-                        <h3>Streamlining Hospital Operations with HMS</h3>
-                        <p>How hospital management systems reduce costs and improve operational efficiency...</p>
-                        <div class="blog-card-footer">
-                            <div class="blog-stats">
-                                <span><i class="fas fa-clock"></i> Coming Soon</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog Card 6 - Coming Soon -->
-                <article class="blog-card coming-soon" data-category="digital-transformation">
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=400&q=80" alt="Digital Health">
-                        <div class="coming-soon-badge">
-                            <i class="fas fa-hourglass-half"></i> Coming Soon
-                        </div>
-                    </div>
-                    <div class="blog-card-content">
-                        <div class="blog-card-header">
-                            <span class="blog-category digital">
-                                <i class="fas fa-digital-tachograph"></i> Digital Transformation
-                            </span>
-                        </div>
-                        <h3>The Digital Healthcare Revolution in India</h3>
-                        <p>Understanding the shift towards digital healthcare and its impact on Indian hospitals...</p>
-                        <div class="blog-card-footer">
-                            <div class="blog-stats">
-                                <span><i class="fas fa-clock"></i> Coming Soon</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-   
-
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
