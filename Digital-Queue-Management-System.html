@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <title>Digital Queue Management System for Hospitals | Queueless</title>
+    <meta name="description"
+        content="Digital Queue Management System modernizes hospital workflows, reduces patient wait times, and ensures smooth, efficient, and stress-free care.">
+    <meta name="keywords"
+        content="digital queue management system, hospital queue management, online appointment system, patient flow management, queue system for hospitals">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">Queueless</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="solutions.html" onclick="closeMobileMenu()">Solutions</a></li>
+                <li><a href="blog.html" onclick="closeMobileMenu()">Blogs</a></li>
+                <li><a href="why-choose.html" onclick="closeMobileMenu()">Why Choose Us</a></li>
+                <li><a href="contact.html" onclick="closeMobileMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section"
+        style="background: linear-gradient(135deg, #0066cc 0%, #004c99 100%); padding: 120px 20px 80px; color: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; color: white;">Digital Queue Management System with
+                    Smart Online Appointments</h1>
+                <p style="font-size: 1.5rem; margin-bottom: 1rem; color: rgba(255,255,255,0.95);">Streamlining Patient
+                    Flow, Enhancing Care Experience</p>
+                <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.9);">Reduce patient wait
+                    times and optimize appointment flow with our digital queue management system designed for hospitals.
+                    Improve operational efficiency, ensure better doctor availability, and deliver a smooth, stress-free
+                    patient journey.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="demo.html" class="btn btn-primary"
+                        style="background: white; color: #0066cc; padding: 1.25rem 2.5rem; font-size: 1.1rem;">
+                        <i class="fas fa-calendar-check"></i> Get Free Demo
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary"
+                        style="padding: 1.25rem 2.5rem; font-size: 1.1rem;">
+                        <i class="fas fa-phone"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section style="padding: 80px 20px; background: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #4a4a4a; margin-bottom: 1.5rem;">Managing patient
+                    queues manually has become one of the biggest challenges for hospitals and clinics today. Long
+                    waiting times, overcrowded waiting areas, missed appointments, and frustrated patients directly
+                    impact service quality and hospital reputation. Our <strong>Digital Queue Management System</strong>
+                    is designed to eliminate these challenges by offering a smart, automated, and patient-friendly way
+                    to manage appointments and queues efficiently.</p>
+
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #4a4a4a;">With Queueless, healthcare providers can
+                    digitize their patient flow, improve doctor availability management, and deliver a smooth,
+                    stress-free experience to patients—right from booking to consultation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section style="padding: 80px 20px; background: #f8f9fa;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; color: #0066cc; margin-bottom: 1rem;">How Our Digital Queue Management
+                    System Works</h2>
+                <p style="font-size: 1.1rem; color: #4a4a4a;">Our system is designed to be simple, fast, and effective
+                    for both patients and hospital staff:</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div
+                    style="background: white; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, #0066cc, #00b8d4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2rem; font-weight: 700;">
+                        1</div>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Online Appointment Booking</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Patients can book appointments anytime, anywhere using
+                        their mobile or computer.</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, #0066cc, #00b8d4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2rem; font-weight: 700;">
+                        2</div>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Smart Queue Generation</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Each appointment automatically generates a digital
+                        queue number based on doctor availability.</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, #0066cc, #00b8d4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2rem; font-weight: 700;">
+                        3</div>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Real-Time Queue Updates</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Patients receive live updates about their queue status,
+                        reducing unnecessary waiting.</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, #0066cc, #00b8d4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2rem; font-weight: 700;">
+                        4</div>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Doctor Availability Sync</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">The system adjusts queues dynamically based on doctor
+                        schedules and delays.</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, #0066cc, #00b8d4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2rem; font-weight: 700;">
+                        5</div>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Consultation & Flow Completion</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Smooth patient flow ensures faster consultations and
+                        better time management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Appointment System -->
+    <section style="padding: 80px 20px; background: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; color: #0066cc; margin-bottom: 1rem;">Smart Online Appointment System for
+                    Hassle-Free Patient Booking</h2>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #4a4a4a; margin-bottom: 1.5rem;">Our <strong>Smart
+                        Online Appointment System</strong> allows patients to book, reschedule, or cancel appointments
+                    online 24/7 without calling the hospital or waiting in long queues. This feature works seamlessly
+                    with our digital queue management system to ensure smooth patient flow and better time utilization
+                    for doctors and staff.</p>
+
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #4a4a4a;">Patients can view doctor availability in
+                    real time and select convenient time slots, while hospitals gain complete control over appointment
+                    scheduling. The system automatically organizes appointments into a smart queue, reducing
+                    overcrowding and eliminating manual booking errors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section style="padding: 80px 20px; background: #f8f9fa;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; color: #0066cc; margin-bottom: 1rem;">Key Features of Our Queue Management
+                    System</h2>
+                <p style="font-size: 1.1rem; color: #4a4a4a;">Each feature is built to simplify hospital operations
+                    while enhancing patient satisfaction</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div
+                    style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #28a745; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <i class="fas fa-calendar-check"
+                        style="font-size: 2.5rem; color: #28a745; margin-bottom: 1rem;"></i>
+                    <p style="color: #4a4a4a; line-height: 1.7; margin: 0;">24/7 online appointment booking</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #28a745; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <i class="fab fa-whatsapp" style="font-size: 2.5rem; color: #28a745; margin-bottom: 1rem;"></i>
+                    <p style="color: #4a4a4a; line-height: 1.7; margin: 0;">Automatic SMS / WhatsApp appointment
+                        reminders</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #28a745; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <i class="fas fa-desktop" style="font-size: 2.5rem; color: #28a745; margin-bottom: 1rem;"></i>
+                    <p style="color: #4a4a4a; line-height: 1.7; margin: 0;">Real-time queue status dashboard</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #28a745; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <i class="fas fa-user-md" style="font-size: 2.5rem; color: #28a745; margin-bottom: 1rem;"></i>
+                    <p style="color: #4a4a4a; line-height: 1.7; margin: 0;">Doctor availability calendar</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #28a745; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <i class="fas fa-redo" style="font-size: 2.5rem; color: #28a745; margin-bottom: 1rem;"></i>
+                    <p style="color: #4a4a4a; line-height: 1.7; margin: 0;">Easy appointment rescheduling & cancellation
+                    </p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #28a745; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <i class="fas fa-check-circle" style="font-size: 2.5rem; color: #28a745; margin-bottom: 1rem;"></i>
+                    <p style="color: #4a4a4a; line-height: 1.7; margin: 0;">Reduced appointment no-shows</p>
+                </div>
+
+                <div
+                    style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #28a745; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <i class="fas fa-mobile-alt" style="font-size: 2.5rem; color: #28a745; margin-bottom: 1rem;"></i>
+                    <p style="color: #4a4a4a; line-height: 1.7; margin: 0;">User-friendly interface for staff and
+                        patients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section style="padding: 80px 20px; background: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; color: #0066cc; margin-bottom: 1rem;">Benefits of Queue Management System
+                    in Hospital</h2>
+                <p style="font-size: 1.1rem; color: #4a4a4a;">Implementing a queue management system in hospital
+                    environments brings measurable improvements</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem;">
+                <div style="background: #f8f9fa; padding: 2.5rem 2rem; border-radius: 12px; text-align: center;">
+                    <i class="fas fa-clock" style="font-size: 3rem; color: #0066cc; margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Reduced Patient Waiting Time</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Organized queues prevent overcrowding and chaos in
+                        waiting areas.</p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2.5rem 2rem; border-radius: 12px; text-align: center;">
+                    <i class="fas fa-smile" style="font-size: 3rem; color: #0066cc; margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Improved Patient Experience</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Patients feel informed, respected, and less stressed.
+                    </p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2.5rem 2rem; border-radius: 12px; text-align: center;">
+                    <i class="fas fa-users-cog" style="font-size: 3rem; color: #0066cc; margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Higher Staff Efficiency</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Automated queues reduce manual work for reception
+                        staff.</p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2.5rem 2rem; border-radius: 12px; text-align: center;">
+                    <i class="fas fa-user-md" style="font-size: 3rem; color: #0066cc; margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Better Doctor Time Utilization</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Doctors see patients in a structured flow without
+                        interruptions.</p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2.5rem 2rem; border-radius: 12px; text-align: center;">
+                    <i class="fas fa-bell-slash" style="font-size: 3rem; color: #0066cc; margin-bottom: 1.5rem;"></i>
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Lower No-Show Rates</h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">Automatic reminders ensure patients don't forget
+                        appointments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section style="padding: 80px 20px; background: linear-gradient(135deg, #004c99 0%, #0066cc 100%); color: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; color: white; margin-bottom: 1rem;">Solve Patient Queue Challenges with
+                    Queueless</h2>
+                <p style="font-size: 1.3rem; color: rgba(255,255,255,0.9);">Enterprise-Ready Digital Queue Management
+                    System</p>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; margin-top: 3rem;">
+                <div
+                    style="background: rgba(255,255,255,0.15); padding: 2.5rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <h3 style="color: white; margin-bottom: 1rem; font-size: 1.5rem;">Smart Online Appointment & Virtual
+                        Queuing</h3>
+                    <p style="color: rgba(255,255,255,0.9); line-height: 1.7; margin-bottom: 1.5rem;">Enable patients to
+                        join queues virtually through online appointments. Queueless allows patients to book,
+                        reschedule, or cancel appointments anytime.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: rgba(255,255,255,0.9);"><i class="fas fa-check-circle"
+                                style="margin-right: 0.5rem;"></i> Smart Online Appointment</li>
+                        <li style="padding: 0.5rem 0; color: rgba(255,255,255,0.9);"><i class="fas fa-check-circle"
+                                style="margin-right: 0.5rem;"></i> Virtual Patient Queuing</li>
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.15); padding: 2.5rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <h3 style="color: white; margin-bottom: 1rem; font-size: 1.5rem;">WhatsApp-Based Queue Notifications
+                    </h3>
+                    <p style="color: rgba(255,255,255,0.9); line-height: 1.7; margin-bottom: 1.5rem;">An integrated
+                        queue notification solution that keeps patients informed through SMS or WhatsApp alerts.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: rgba(255,255,255,0.9);"><i class="fas fa-check-circle"
+                                style="margin-right: 0.5rem;"></i> WhatsApp & SMS Queue Alerts</li>
+                        <li style="padding: 0.5rem 0; color: rgba(255,255,255,0.9);"><i class="fas fa-check-circle"
+                                style="margin-right: 0.5rem;"></i> Real-Time Patient Updates</li>
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.15); padding: 2.5rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <h3 style="color: white; margin-bottom: 1rem; font-size: 1.5rem;">Hospital Queue Management System
+                    </h3>
+                    <p style="color: rgba(255,255,255,0.9); line-height: 1.7; margin-bottom: 1.5rem;">Queueless
+                        simplifies hospital queue operations by organizing patient flow across OPD and consultation
+                        rooms.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: rgba(255,255,255,0.9);"><i class="fas fa-check-circle"
+                                style="margin-right: 0.5rem;"></i> Hospital Queue System</li>
+                        <li style="padding: 0.5rem 0; color: rgba(255,255,255,0.9);"><i class="fas fa-check-circle"
+                                style="margin-right: 0.5rem;"></i> OPD Queue Optimization</li>
+                    </ul>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.15); padding: 2.5rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <h3 style="color: white; margin-bottom: 1rem; font-size: 1.5rem;">Digital Patient Flow Management
+                    </h3>
+                    <p style="color: rgba(255,255,255,0.9); line-height: 1.7; margin-bottom: 1.5rem;">Allow patients to
+                        join queues digitally before arriving at the hospital. Our mobile-friendly queue system
+                        minimizes physical waiting.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: rgba(255,255,255,0.9);"><i class="fas fa-check-circle"
+                                style="margin-right: 0.5rem;"></i> Mobile Queue Access</li>
+                        <li style="padding: 0.5rem 0; color: rgba(255,255,255,0.9);"><i class="fas fa-check-circle"
+                                style="margin-right: 0.5rem;"></i> Pre-Arrival Queue Joining</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section style="padding: 90px 20px; background: #f8f9fa;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+
+        <!-- Section Heading -->
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h2 style="font-size: 2.6rem; color: #0066cc; margin-bottom: 1rem;">
+                Why Choose Queueless?
+            </h2>
+            <p style="font-size: 1.1rem; color: #6c757d;">
+                A digital queue platform built for real healthcare challenges
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2.5rem;">
+            
+            <div style="background: white; padding: 2.5rem 2rem; border-radius: 14px;
+                        box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center;">
+                <i class="fas fa-bolt" style="font-size: 2.7rem; color: #0066cc; margin-bottom: 1.2rem;"></i>
+                <p style="color: #4a4a4a; line-height: 1.7;">
+                    Easy-to-use system with quick implementation
+                </p>
+            </div>
+
+            <div style="background: white; padding: 2.5rem 2rem; border-radius: 14px;
+                        box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center;">
+                <i class="fas fa-shield-alt" style="font-size: 2.7rem; color: #0066cc; margin-bottom: 1.2rem;"></i>
+                <p style="color: #4a4a4a; line-height: 1.7;">
+                    Secure and reliable cloud-based platform
+                </p>
+            </div>
+
+            <div style="background: white; padding: 2.5rem 2rem; border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center;">
+    <i class="fas fa-heartbeat"
+       style="font-size: 2.7rem; color: #0066cc; margin-bottom: 1.2rem;"></i>
+    <p style="color: #4a4a4a; line-height: 1.7;">
+        Designed specifically for Indian healthcare workflows
+    </p>
+</div>
+
+
+            <div style="background: white; padding: 2.5rem 2rem; border-radius: 14px;
+                        box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center;">
+                <i class="fas fa-hospital" style="font-size: 2.7rem; color: #0066cc; margin-bottom: 1.2rem;"></i>
+                <p style="color: #4a4a4a; line-height: 1.7;">
+                    Ideal for hospitals, clinics & diagnostic centers
+                </p>
+            </div>
+
+            <div style="background: white; padding: 2.5rem 2rem; border-radius: 14px;
+                        box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center;">
+                <i class="fas fa-headset" style="font-size: 2.7rem; color: #0066cc; margin-bottom: 1.2rem;"></i>
+                <p style="color: #4a4a4a; line-height: 1.7;">
+                    Reliable support with continuous system improvements
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Highlight Statement -->
+        <div style="margin-top: 4rem; padding: 2.5rem; background: white; border-radius: 16px;
+                    text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+            <p style="font-size: 1.25rem; color: #333; line-height: 1.8; margin: 0;">
+                Queueless focuses on <strong>practical, real-world solutions</strong> that genuinely
+                improve hospital operations and elevate patient satisfaction.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section style="padding: 80px 20px; background: white;">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; color: #0066cc; margin-bottom: 1rem;">
+                    Frequently Asked Questions (FAQs)
+                </h2>
+            </div>
+
+            <div style="display: grid; gap: 2rem;">
+
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #0066cc;">
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">
+                        1. What is a Digital Queue Management System?
+                    </h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">
+                        A Digital Queue Management System is software that helps hospitals and clinics manage patient
+                        flow efficiently.
+                        It organizes appointments, generates queues automatically, and reduces waiting times for
+                        patients.
+                    </p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #0066cc;">
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">
+                        2. How does a queue management system work?
+                    </h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">
+                        A queue management system organizes patients automatically based on appointments or arrival
+                        time,
+                        ensuring smooth patient flow. It provides real-time updates to both staff and patients, reducing
+                        wait times and overcrowding.
+                    </p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #0066cc;">
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">
+                        3. How does an online booking system work?
+                    </h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">
+                        An online booking system allows patients to schedule, reschedule, or cancel appointments through
+                        a web or mobile platform. It syncs automatically with the hospital’s schedule, ensuring
+                        efficient
+                        patient flow and reduced waiting times.
+                    </p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #0066cc;">
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">
+                        4. How is HMS used for appointment scheduling?
+                    </h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">
+                        A Hospital Management System (HMS) schedules patient appointments by allowing staff and patients
+                        to book, reschedule, or cancel slots digitally. It automatically updates the doctor’s calendar
+                        and optimizes patient flow to reduce waiting times.
+                    </p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #0066cc;">
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">
+                        5. What are the benefits of the hospital management system?
+                    </h3>
+                    <p style="color: #4a4a4a; line-height: 1.7;">
+                        A Hospital Management System improves patient care, reduces waiting times, streamlines hospital
+                        operations, and enhances staff efficiency and decision-making.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">Queueless</div>
+                <p>Transforming healthcare management with innovative digital solutions. Making quality healthcare
+                    accessible and convenient for everyone.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Queueless-Hospital-Management-Software/61581918880900/"
+                        target="_blank" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/queu_eless/" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="why-choose.html">Why Choose Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="solutions.html#appointments">Online Appointments</a></li>
+                    <li><a href="solutions.html#opd">OPD Management</a></li>
+                    <li><a href="solutions.html#ipd">IPD Management</a></li>
+                    <li><a href="solutions.html#reports">Reports & Analytics</a></li>
+                    <li><a href="solutions.html#whatsapp">WhatsApp Reminders</a></li>
+                    <li><a href="solutions.html#security">Secure & Compliant</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="demo.html">Free Demo</a></li>
+                    <li><a href="contact.html#contact">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Logiciel Ganymede. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
